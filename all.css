@@ -1,0 +1,184 @@
+/* Сброс стандартных отступов и полей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 
+    box-sizing: border-box - чтобы padding и border 
+    включались в общую ширину элемента 
+  */
+}
+
+img.product-image{
+  width: 265.5px;
+  height: 180px;
+}
+
+body {
+  font-family: style="font-family: 'Times New Roman', Times, serif;";
+
+  background: #7a7a7a;
+  /* 
+    Устанавливаем основной шрифт для всей страницы.
+    Arial - безопасный шрифт, доступный на всех устройствах.
+  */
+  line-height: 1.6;
+  /* 
+    Межстрочный интервал - делает текст более читаемым.
+    1.6 - это 160% от размера шрифта.
+  */
+  color: #333;
+  /* Основной цвет текста - темно-серый */
+  
+}
+
+/* Стили для шапки сайта */
+.header {
+  background:#000000 ;
+  /* Темно-синий цвет фона */
+  color: white;
+  /* Белый цвет текста */
+  padding: 1rem;
+  /* 
+    Внутренний отступ 1rem (≈16px).
+    rem - единица измерения, зависящая от размера шрифта корневого элемента.
+  */
+  display: flex;
+  /* 
+    Flexbox - современный способ расположения элементов.
+    Позволяет легко выравнивать элементы по горизонтали.
+  */
+  justify-content: space-between;
+  /* Равномерно распределяет пространство между элементами */
+  align-items: center;
+  /* Выравнивает элементы по центру по вертикали */
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+#checkout-btn.checkout-button{
+  margin-top: 10px;
+  height: 35px;
+  width: 25%;
+  border-radius: 5px;
+  background-color: #c4c4c4;
+}
+
+#search-input{
+  height: 35px;
+  width: 100%;
+  border-radius: 5px;
+}
+ #sort-select{
+  margin-top: 10px;
+  height: 35px;
+  width: 50%;
+  border-radius: 5px;
+}
+/* Стили для меню навигации */
+.menu {
+  display: flex;
+  list-style: none;
+  /* Убираем маркеры у списка */
+}
+
+.menu li {
+  margin-left: 1rem;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  /* Убираем подчеркивание у ссылок */
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  /* Подчеркивание при наведении */
+}
+
+/* Стили для основной части */
+
+.products {
+  flex: 3;
+  /* Занимает 3 части доступного пространства */
+  padding-right: 1rem;
+  
+}
+
+.sidebar {
+  flex: 1;
+  /* Занимает 1 часть доступного пространства */
+  background-color: #999999;
+  padding: 1rem;
+  border-radius: 5px;
+  /* Скругленные углы */
+}
+
+.product-card{
+  background-color:#999999 ;
+} 
+
+/* Стили для подвала */
+
+.footer {
+  background: #000000;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.main-content {
+  display: flex;
+  padding: 1rem;
+  min-height: 100vh;
+  flex-direction: column;
+
+}
+
+#liginEmail{
+    width: 500px;
+    height: 30px;
+}
+
+#liginPass{
+    width: 500px;
+    height: 30px;
+}
+
+#enter{
+    width: 60px;
+    height: 20px;
+}
+
+#regg{
+    width: 435px;
+    height: 20px;
+}
+
+#regName{
+    width: 248px;
+    height: 30px;
+}
+#regPass{
+    width: 248px;
+    height: 30px;
+}
+
+#regEmail{
+    width: 500px;
+    height: 30px;
+}
+
+#enterReg{
+    width: 160px;
+    height: 20px;
+}
+
+#enterr{
+    width: 336px;
+    height: 20px;
+}

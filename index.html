@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cart.css" />
+  <title>MechaLight - интернет магазин изделий из металлов</title>
+</head>
+
+
+<body>
+
+   <div>
+      <img src="./image/head2.png" style="width: 100%; margin-bottom: -10px;"  >
+    </div>
+  <header class="header">
+   
+    <div class="logo">
+
+      <h1 style="font-family: 'Times New Roman', Times, serif;">Mecha<span style="color: #999999;">Light</span></h1>
+    </div>
+
+    <nav class="navigation">
+
+      <ul class="menu">
+        <li><a href="#"><h3 style="font-family: 'Times New Roman', Times, serif;">Главная</h3></a></li>
+        <li><a href="./register.html"><h3 style="font-family: 'Times New Roman', Times, serif;">Вход</h3></a></li>
+        <li><a href="./o nas.html"><h3 style="font-family: 'Times New Roman', Times, serif;">О нас</h3></a></li>
+        <li><a href="./kontacts.html"><h3 style="font-family: 'Times New Roman', Times, serif;">Контакты</h3></a></li>
+      </ul>
+    </nav>
+
+    <div class="cart" style="cursor: pointer;" >
+    <h3 style="font-family: 'Times New Roman', Times, serif;">🛒 Корзина</h3>
+    </div>
+  </header>
+
+
+  <main class="main-content">
+    <section class="products">
+      <div class="product-list">
+
+      </div>
+      <h2></h2>
+      <div class="product-list">
+
+        <p></p>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+
+      <h3>Фильтры</h3>
+      <div class="filters">
+        <input type="text" id="search-input" placeholder="  Поиск товаров..." />
+
+
+        <select id="sort-select">
+          <option value="default">Без сортировки</option>
+          <option value="price-asc">Цена: по возрастанию</option>
+          <option value="price-desc">Цена: по убыванию</option>
+          <option value="name-asc">Название: A→Я</option>
+          <option value="name-desc">Название: Я→A</option>
+        </select>
+      </div>
+    </aside>
+  </main>
+
+>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2022 MechaLight - Магазин изделий из металла</p>
+      <p>Телефон: +7 (918) 088-67-62</p>
+      <p>Email: MechaLight@gmail.com</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: style="font-family: 'Times New Roman', Times, serif;";
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #7a7a7a;
+    color: #333;
+}
+
+
+/* Стили для шапки сайта */
+.header {
+  background:#000000 ;
+  /* Темно-синий цвет фона */
+  color: white;
+  /* Белый цвет текста */
+  padding: 1rem;
+  /* 
+    Внутренний отступ 1rem (≈16px).
+    rem - единица измерения, зависящая от размера шрифта корневого элемента.
+  */
+  display: flex;
+  /* 
+    Flexbox - современный способ расположения элементов.
+    Позволяет легко выравнивать элементы по горизонтали.
+  */
+  justify-content: space-between;
+  /* Равномерно распределяет пространство между элементами */
+  align-items: center;
+  /* Выравнивает элементы по центру по вертикали */
+}
+
+.auth-container {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+    z-index: 1;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(10px);
+    animation: fadeInOverlay 1s ease-in-out forwards;
+}
+
+@keyframes fadeInOverlay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.auth-form {
+    position: relative;
+    border-radius: 1rem;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    padding: 3rem;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1), inset 0 0 0 1px rgba(0, 0, 0, .05);
+    transform: translateY(-5%);
+    animation: slideDown 0.5s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(-5%);
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+.form-control {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus + small::before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+input:focus ~ small::before {
+    transform: scaleX(1);
+}
+
+small {
+    visibility: hidden;
+    color: red;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #3b3b3b;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: linear-gradient(to bottom, #000000, #584639);
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+    }
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
