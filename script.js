@@ -33,14 +33,14 @@ const products = [
         name: "перилла", 
         category: "декор двора", 
         price: 18000,
-        image: './image/перила.jpg'      
+        image: './image/perila.jpg'      
     },
         { 
         id: 7, 
         name: "забор", 
         category: "декор двора", 
         price: 4000,
-        image: './image/забор2.jpg'      
+        image: './image/zabor.jpg'      
     },
         { 
         id: 8, 
@@ -54,14 +54,14 @@ const products = [
         name: "фонари", 
         category: "элемент освещения двора", 
         price: 7000,
-        image: './image/фонарь.jpg'      
+        image: './image/fonar.jpg'      
     },
         { 
         id: 10, 
         name: "люстры", 
         category: "элемент освещения дома", 
         price: 10000,
-        image: './image/люстра.jpg'      
+        image: './image/lustra.jpg'      
     }
 ]
 let filteredProducts = [...products];
@@ -180,6 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Обновляем счётчик корзины
   updateCartCount();
 });
+
 
 
 
